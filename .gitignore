@@ -1,3 +1,6 @@
 node_modules/
 *.json
 *.yaml
+
+!package.json
+!package-lock.json
