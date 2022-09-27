@@ -1,0 +1,27 @@
+{
+  "/token": {
+    "get": {
+      "responses": {
+        "200": {
+          "title": "ChatTokenResponse",
+          "required": [
+            "token",
+            "api_key"
+          ],
+          "type": "object",
+          "properties": {
+            "token": {
+              "title": "Token",
+              "type": "string"
+            },
+            "api_key": {
+              "title": "Api Key",
+              "type": "string"
+            }
+          },
+          "$schema": "http://json-schema.org/draft-04/schema#"
+        }
+      }
+    }
+  }
+}

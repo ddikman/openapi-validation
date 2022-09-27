@@ -1,0 +1,32 @@
+openapi: 3.0.2
+info:
+  title: Example API
+  version: 0.1.0
+paths:
+  /token:
+    get:
+      summary: Get Token
+      description: Get user token
+      operationId: get_token
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/TokenResponse'
+components:
+  schemas:
+    TokenResponse:
+      title: ChatTokenResponse
+      required:
+        - token
+        - api_key
+      type: object
+      properties:
+        token:
+          title: Token
+          type: string
+        api_key:
+          title: Api Key
+          type: string
